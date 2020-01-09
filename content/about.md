@@ -1,32 +1,21 @@
 ---
-title: About Me
+title: About
 date: 2020-01-09
 authorbox: false
 sidebar: false
 menu: main
 ---
 
-Hugo is a static site engine written in Go.
+<p align="center">
+  <img width="150" height="150" src="/img/avatar.png"/>
+</p>
 
+Julien works as an application security engineer for [Grab](www.grab.com) and [OVO](www.ovo.id). He has experience managing and triaging on their respective bug bounty program (top 20 program worldwide on HackerOne). 
 
-It makes use of a variety of open source projects including:
+He also enjoys sharpening his skills on the ever so awesome [Hack The Box](https://www.hackthebox.eu/) website (check out my [profile](https://www.hackthebox.eu/profile/20856)).
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+Aside from computers, Julien is an aspiring rock climber - who aims to reach double digit routes before his thirties - dancer, and contemplator.
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+Feel free to reach out on [Twitter](https://twitter.com/0xEval) or [LinkedIn](https://www.linkedin.com/in/jcouvy/) for professional enquiries.
 
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+Thank you for reading, and have a great day ☀️!

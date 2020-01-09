@@ -15,7 +15,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   subtitle = "All things security" # Subtitle of your site
   description = "Description" # Description of your site
   opengraph = false
-  enableEmoji = true
   twitter_cards = false
   readmore = true # Show "Read more" button in list if true
   authorbox = true
@@ -23,7 +22,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   post_meta = ["date", "categories"] # Order of post meta information
   customCSS = ["css/custom.css"] # Include custom CSS files
   # Global variable for highlighted color $highlightColor in custom.css
-  highlightColor = "#d5d5d5"
+  highlightColor = "#55aaff"
   
 [Params.sidebar]
   home = "right"   # Configure layout for home page
@@ -35,6 +34,3 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
-
-[markup.goldmark.renderer]
-  unsafe = true

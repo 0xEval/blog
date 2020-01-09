@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic Elements on Fish Sec</title>
+    <link>/tags/basic-elements/</link>
+    <description>Recent content in Basic Elements on Fish Sec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/basic-elements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic HTML Elements</title>
+      <link>/post/basic-elements/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/basic-elements/</guid>
+      <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exploiting XSS via CORS trust relationships</title>
+      <link>/post/exploiting-xss-cors/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/exploiting-xss-cors/</guid>
+      <description>&lt;h1 id=&#34;exploiting-xss-via-cors-trust-relationships&#34;&gt;Exploiting XSS via CORS trust relationships&lt;/h1&gt;
+&lt;p&gt;Continuing the Burp Suite Academy series. Today, we will go through CORS exploitations exercises&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

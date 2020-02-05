@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://blog.fishsec.xyz/"
 title = "Fish Sec"
 languageCode = "en-us"
 paginate = "3" # Number of posts per page
@@ -23,6 +23,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   customCSS = ["css/custom.css"] # Include custom CSS files
   # Global variable for highlighted color $highlightColor in custom.css
   highlightColor = "#55aaff"
+
+[Social]
+twitter = "0xEval"
   
 [Params.sidebar]
   home = "right"   # Configure layout for home page

@@ -117,7 +117,7 @@ Nothing else stands out, the traffic is very quiet. At this point we don't have 
 
 # Enumerating: staging.player.htb
 
-{{< figure src="https://cdn-images-1.medium.com/max/2400/1*tjBjAJyV0ck_gTscgVzmmA.png" title="Virtual host found on staging.player.htb" width=800 >}}
+{{< figure src="https://cdn-images-1.medium.com/max/2400/1*tjBjAJyV0ck_gTscgVzmmA.png" title="Virtual host found on staging.player.htb" width="800" >}}
 
 **Product Updates tab** will regularly query `update.php` which will fetch an image from the server. Nothing much to do about it.
 

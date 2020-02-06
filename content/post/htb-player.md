@@ -123,13 +123,13 @@ Nothing else stands out, the traffic is very quiet. At this point we don't have 
 
 While navigating to the Contact Core Team tab, we briefly see an error message before being redirected to `501.php`. Let's observe what happens with our web proxy
 
-{{< figure src="https://cdn-images-1.medium.com/max/2400/1*-tEZ6PQ3pjYjo1XNmcElJA.png" title="Verbose error message on contact.php" width=800 >}}
+{{< figure src="https://cdn-images-1.medium.com/max/2400/1*-tEZ6PQ3pjYjo1XNmcElJA.png" title="Verbose error message on contact.php" width="800" >}}
 
 # Enumerating: dev.player.htb
 
 This vhost caused me the most trouble, I hunted for SQLi or authentication bypass but to no avail. My mistake was to trust my wordlists a bit too much instead of using my brain.
 
-{{< figure src="https://cdn-images-1.medium.com/max/2400/1*gcjSRPrUWZm4-PojoHdL2A.png" title="Login page on dev.player.htb" width=800 >}}
+{{< figure src="https://cdn-images-1.medium.com/max/2400/1*gcjSRPrUWZm4-PojoHdL2A.png" title="Login page on dev.player.htb" width="800" >}}
 
 Navigating through the JavaScript files we understand that this portal is for a Cloud IDE called Codiad. 
 

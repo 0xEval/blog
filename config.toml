@@ -1,7 +1,7 @@
 baseurl = "https://blog.fishsec.xyz/"
 title = "Fish Sec"
 languageCode = "en-us"
-paginate = "3" # Number of posts per page
+paginate = "4" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
@@ -16,7 +16,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   description = "Description" # Description of your site
   opengraph = false
   twitter_cards = false
-  readmore = true # Show "Read more" button in list if true
+  readmore = false # Show "Read more" button in list if true
   authorbox = true
   post_navigation = false
   post_meta = ["date", "categories"] # Order of post meta information
@@ -35,5 +35,5 @@ twitter = "0xEval"
   widgets = ["search", "recent", "categories", "taglist"]
 
 [Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  recent_num = 3 # Set the number of articles in the "Recent articles" widget
   tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)

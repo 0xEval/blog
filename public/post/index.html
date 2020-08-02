@@ -25,7 +25,9 @@
 	<div class="container">
 		<div class="logo">
 			<a class="logo__link" href="/" title="Fish Sec" rel="home">
-				<div class="logo__title">Fish Sec</div>
+				<div class="logo__title">
+          <img height=150px width=150px src="/img/logo.png" alt="logo">
+        </div>
 				<div class="logo__tagline">All things security</div>
 			</a>
 		</div>
@@ -36,30 +38,16 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/migrate-from-jekyll/">
-				
-				<span class="menu__text">Jekyll migration</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/post/goisforlovers/">
-				
-				<span class="menu__text">(Hu)go Template Primer</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
 			<a class="menu__link" href="/about/">
 				
-				<span class="menu__text">About Hugo</span>
+				<span class="menu__text">About</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/post/hugoisforlovers/">
+			<a class="menu__link" href="/cheatsheet/">
 				
-				<span class="menu__text">Getting Started with Hugo</span>
+				<span class="menu__text">Cheat Sheet</span>
 				
 			</a>
 		</li>
@@ -68,6 +56,7 @@
 
 	</div>
 </header>
+
 		<div class="wrapper flex">
 			<div class="primary">
 			
@@ -77,74 +66,81 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/basic-elements/" rel="bookmark">
-			Basic HTML Elements
+			<a href="/post/token-storage/" rel="bookmark">
+			Analysis on secure session token storage
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2018-04-16T00:00:00">April 16, 2018</time>
+	<time class="meta__text" datetime="2020-02-05T00:00:00">February 05, 2020</time>
 </div>
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/development/" rel="category">Development</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/write-up/" rel="category">Write-up</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		<p>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.</p>
+		<p>Where should you store my session tokens to keep them secure ?</p>
 	</div>
 	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/post/basic-elements/">Read more…</a>
+		<a class="list__footer-readmore btn" href="/post/token-storage/">Read more…</a>
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/exploiting-xss-cors/" rel="bookmark">
-			Exploiting XSS via CORS trust relationships
+			<a href="/post/htb-player/" rel="bookmark">
+			Hack the Box - Player Walkthrough
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2018-04-16T00:00:00">April 16, 2018</time>
+	<time class="meta__text" datetime="2020-02-05T00:00:00">February 05, 2020</time>
 </div>
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/development/" rel="category">Development</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/write-up/" rel="category">Write-up</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		<h1 id="exploiting-xss-via-cors-trust-relationships">Exploiting XSS via CORS trust relationships</h1>
-<p>Continuing the Burp Suite Academy series. Today, we will go through CORS exploitations exercises&hellip;</p>
+		Prelude  Credits to MrR3boot for the challenge
+  Player was a really enjoyable machine, a lot of initial enumeration work was needed as well as keeping track and note down everything found. A few hints are laid out throughout the whole search and they all connect together nicely.
+Let's get started.
+ Initial Enumeration Since I am lazy of running the same enumeration process every time I start a machine on HTB, I decided to try one of the reconnaissance script available out there.
 	</div>
 	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/post/exploiting-xss-cors/">Read more…</a>
+		<a class="list__footer-readmore btn" href="/post/htb-player/">Read more…</a>
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/creating-a-new-theme/" rel="bookmark">
-			Creating a New Theme
+			<a href="/post/angularjs-sandbox-escape/" rel="bookmark">
+			Learning Weekly (#01) - AngularJS sandbox escapes
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2014-09-28T00:00:00">September 28, 2014</time>
+	<time class="meta__text" datetime="2020-02-05T00:00:00">February 05, 2020</time>
 </div>
-</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/learning/" rel="category">Learning</a>
+	</span>
+</div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I'll explain how Hugo uses templates and how you can organize your templates to create a theme. I won't cover using CSS to style your theme.
-We'll start with creating a new site with a very basic template.
+		<p>This post will be the starting point on a new series <em>Learning Weekly</em> where I will spend a week learning about a new topic and summarize the outcome in a single page format.</p>
+<p>For this first episode, we will talk about <strong>AngularJS sandbox escapes</strong>.</p>
 	</div>
 	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/post/creating-a-new-theme/">Read more…</a>
+		<a class="list__footer-readmore btn" href="/post/angularjs-sandbox-escape/">Read more…</a>
 	</div>
 </article>
 </main>
@@ -163,18 +159,18 @@ We'll start with creating a new site with a very basic template.
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="/" />
+		<input type="hidden" name="sitesearch" value="https://blog.fishsec.xyz/" />
 	</form>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/token-storage/">Analysis on secure session token storage</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/htb-player/">Hack the Box - Player Walkthrough</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/angularjs-sandbox-escape/">Learning Weekly (#01) - AngularJS sandbox escapes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/setup-android-burp/">Setting up Android testing with Burp and Genymotion</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/exploiting-xss-cors/">Exploiting XSS via CORS trust relationships</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/creating-a-new-theme/">Creating a New Theme</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/goisforlovers/">(Hu)go Template Primer</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/hugoisforlovers/">Getting Started with Hugo</a></li>
 		</ul>
 	</div>
 </div>
@@ -183,10 +179,13 @@ We'll start with creating a new site with a very basic template.
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/development/">Development</a>
+				<a class="widget__link" href="/categories/learning/">Learning</a>
 			</li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/golang/">golang</a>
+				<a class="widget__link" href="/categories/tutorial/">Tutorial</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/write-up/">Write-up</a>
 			</li>
 		</ul>
 	</div>
@@ -194,15 +193,17 @@ We'll start with creating a new site with a very basic template.
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/android/" title="Android">Android (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/angularjs/" title="AngularJS">AngularJS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/burp-suite/" title="Burp Suite">Burp Suite (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/burp-suite-academy/" title="Burp Suite Academy">Burp Suite Academy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cookies/" title="Cookies">Cookies (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cors/" title="CORS">CORS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hackthebox/" title="HackTheBox">HackTheBox (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/learning-weekly/" title="Learning Weekly">Learning Weekly (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="Storage">Storage (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/template-injection/" title="Template Injection">Template Injection (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/xss/" title="XSS">XSS (2)</a>
 	</div>
 </div>
 </aside>

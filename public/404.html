@@ -24,7 +24,9 @@
 	<div class="container">
 		<div class="logo">
 			<a class="logo__link" href="/" title="Fish Sec" rel="home">
-				<div class="logo__title">Fish Sec</div>
+				<div class="logo__title">
+          <img height=150px width=150px src="/img/logo.png" alt="logo">
+        </div>
 				<div class="logo__tagline">All things security</div>
 			</a>
 		</div>
@@ -35,30 +37,16 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/migrate-from-jekyll/">
-				
-				<span class="menu__text">Jekyll migration</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/post/goisforlovers/">
-				
-				<span class="menu__text">(Hu)go Template Primer</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
 			<a class="menu__link" href="/about/">
 				
-				<span class="menu__text">About Hugo</span>
+				<span class="menu__text">About</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/post/hugoisforlovers/">
+			<a class="menu__link" href="/cheatsheet/">
 				
-				<span class="menu__text">Getting Started with Hugo</span>
+				<span class="menu__text">Cheat Sheet</span>
 				
 			</a>
 		</li>
@@ -67,6 +55,7 @@
 
 	</div>
 </header>
+
 		<div class="wrapper flex">
 			<div class="primary">
 			
@@ -85,18 +74,18 @@
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="/" />
+		<input type="hidden" name="sitesearch" value="https://blog.fishsec.xyz/" />
 	</form>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/token-storage/">Analysis on secure session token storage</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/htb-player/">Hack the Box - Player Walkthrough</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/angularjs-sandbox-escape/">Learning Weekly (#01) - AngularJS sandbox escapes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/setup-android-burp/">Setting up Android testing with Burp and Genymotion</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/exploiting-xss-cors/">Exploiting XSS via CORS trust relationships</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/creating-a-new-theme/">Creating a New Theme</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/goisforlovers/">(Hu)go Template Primer</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/hugoisforlovers/">Getting Started with Hugo</a></li>
 		</ul>
 	</div>
 </div>
@@ -105,10 +94,13 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/development/">Development</a>
+				<a class="widget__link" href="/categories/learning/">Learning</a>
 			</li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/golang/">golang</a>
+				<a class="widget__link" href="/categories/tutorial/">Tutorial</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/write-up/">Write-up</a>
 			</li>
 		</ul>
 	</div>
@@ -116,15 +108,17 @@
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/android/" title="Android">Android (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/angularjs/" title="AngularJS">AngularJS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/burp-suite/" title="Burp Suite">Burp Suite (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/burp-suite-academy/" title="Burp Suite Academy">Burp Suite Academy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cookies/" title="Cookies">Cookies (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cors/" title="CORS">CORS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hackthebox/" title="HackTheBox">HackTheBox (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/learning-weekly/" title="Learning Weekly">Learning Weekly (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="Storage">Storage (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/template-injection/" title="Template Injection">Template Injection (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/xss/" title="XSS">XSS (2)</a>
 	</div>
 </div>
 </aside>

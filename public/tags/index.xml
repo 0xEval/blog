@@ -2,93 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Fish Sec</title>
-    <link>/tags/</link>
+    <link>https://blog.fishsec.xyz/tags/</link>
     <description>Recent content in Tags on Fish Sec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fishsec.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Basic Elements</title>
-      <link>/tags/basic-elements/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <title>AngularJS</title>
+      <link>https://blog.fishsec.xyz/tags/angularjs/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/basic-elements/</guid>
+      <guid>https://blog.fishsec.xyz/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CSS</title>
-      <link>/tags/css/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Cookies</title>
+      <link>https://blog.fishsec.xyz/tags/cookies/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/css/</guid>
+      <guid>https://blog.fishsec.xyz/tags/cookies/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>HTML</title>
-      <link>/tags/html/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <title>HackTheBox</title>
+      <link>https://blog.fishsec.xyz/tags/hackthebox/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://blog.fishsec.xyz/tags/hackthebox/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>development</title>
-      <link>/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Learning Weekly</title>
+      <link>https://blog.fishsec.xyz/tags/learning-weekly/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/development/</guid>
+      <guid>https://blog.fishsec.xyz/tags/learning-weekly/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>go</title>
-      <link>/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Storage</title>
+      <link>https://blog.fishsec.xyz/tags/storage/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/go/</guid>
+      <guid>https://blog.fishsec.xyz/tags/storage/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>golang</title>
-      <link>/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Template Injection</title>
+      <link>https://blog.fishsec.xyz/tags/template-injection/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/golang/</guid>
+      <guid>https://blog.fishsec.xyz/tags/template-injection/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>XSS</title>
+      <link>https://blog.fishsec.xyz/tags/xss/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://blog.fishsec.xyz/tags/xss/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>templates</title>
-      <link>/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Android</title>
+      <link>https://blog.fishsec.xyz/tags/android/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/templates/</guid>
+      <guid>https://blog.fishsec.xyz/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Burp Suite</title>
+      <link>https://blog.fishsec.xyz/tags/burp-suite/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/themes/</guid>
+      <guid>https://blog.fishsec.xyz/tags/burp-suite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Burp Suite Academy</title>
+      <link>https://blog.fishsec.xyz/tags/burp-suite-academy/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/tags/burp-suite-academy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CORS</title>
+      <link>https://blog.fishsec.xyz/tags/cors/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/tags/cors/</guid>
       <description></description>
     </item>
     

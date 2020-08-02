@@ -2,94 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fish Sec</title>
-    <link>/</link>
+    <link>https://blog.fishsec.xyz/</link>
     <description>Recent content on Fish Sec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fishsec.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Basic HTML Elements</title>
-      <link>/post/basic-elements/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Analysis on secure session token storage</title>
+      <link>https://blog.fishsec.xyz/post/token-storage/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/basic-elements/</guid>
-      <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
+      <guid>https://blog.fishsec.xyz/post/token-storage/</guid>
+      <description>&lt;p&gt;Where should you store my session tokens to keep them secure ?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hack the Box - Player Walkthrough</title>
+      <link>https://blog.fishsec.xyz/post/htb-player/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/post/htb-player/</guid>
+      <description>Prelude  Credits to MrR3boot for the challenge
+  Player was a really enjoyable machine, a lot of initial enumeration work was needed as well as keeping track and note down everything found. A few hints are laid out throughout the whole search and they all connect together nicely.
+Let&#39;s get started.
+ Initial Enumeration Since I am lazy of running the same enumeration process every time I start a machine on HTB, I decided to try one of the reconnaissance script available out there.</description>
+    </item>
+    
+    <item>
+      <title>Learning Weekly (#01) - AngularJS sandbox escapes</title>
+      <link>https://blog.fishsec.xyz/post/angularjs-sandbox-escape/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/post/angularjs-sandbox-escape/</guid>
+      <description>&lt;p&gt;This post will be the starting point on a new series &lt;em&gt;Learning Weekly&lt;/em&gt; where I will spend a week learning about a new topic and summarize the outcome in a single page format.&lt;/p&gt;
+&lt;p&gt;For this first episode, we will talk about &lt;strong&gt;AngularJS sandbox escapes&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up Android testing with Burp and Genymotion</title>
+      <link>https://blog.fishsec.xyz/post/setup-android-burp/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/post/setup-android-burp/</guid>
+      <description>&lt;p&gt;This tutorial is a quick reference on how to setup a Genymotion VM for Android testing with Burp Suite.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.fishsec.xyz/about/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/about/</guid>
+      <description>Julien works as an application security engineer for Grab and OVO. He has experience managing and triaging on their respective bug bounty program (top 20 program worldwide on HackerOne).
+He also enjoys sharpening his skills on the ever so awesome Hack The Box website (check out my profile).
+Aside from computers, Julien is an aspiring rock climber - who aims to reach double digit routes before his thirties - dancer, and contemplator.</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet</title>
+      <link>https://blog.fishsec.xyz/cheatsheet/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fishsec.xyz/cheatsheet/</guid>
+      <description>** Work in Progress **</description>
     </item>
     
     <item>
       <title>Exploiting XSS via CORS trust relationships</title>
-      <link>/post/exploiting-xss-cors/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://blog.fishsec.xyz/post/exploiting-xss-cors/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/exploiting-xss-cors/</guid>
-      <description>&lt;h1 id=&#34;exploiting-xss-via-cors-trust-relationships&#34;&gt;Exploiting XSS via CORS trust relationships&lt;/h1&gt;
-&lt;p&gt;Continuing the Burp Suite Academy series. Today, we will go through CORS exploitations exercises&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&#39;t cover using CSS to style your theme.
-We&#39;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>About Hugo</title>
-      <link>/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/goisforlovers/</guid>
-      <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
-its template engine. It is an extremely lightweight engine that provides a very
-small amount of logic. In our experience that it is just the right amount of
-logic to be able to create a good static website. If you have used other
-template systems from different languages or frameworks you will find a lot of
-similarities in Go templates.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>https://blog.fishsec.xyz/post/exploiting-xss-cors/</guid>
+      <description>&lt;p&gt;Continuing the Burp Suite Academy series. Today, we will go through CORS exploitations exercises&amp;hellip;&lt;/p&gt;</description>
     </item>
     
   </channel>

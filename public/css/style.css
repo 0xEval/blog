@@ -134,7 +134,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 /* Animation */
@@ -193,7 +193,7 @@ a {
 }
 
 a:hover {
-	color: #d5d5d5;
+	color: #55aaff;
 }
 
 hr {
@@ -299,7 +299,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid #d5d5d5;
+	border-left: 5px solid #55aaff;
 }
 
 blockquote p:last-child {
@@ -406,14 +406,14 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #d5d5d5;
+	color: #55aaff;
 	border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #d5d5d5;
+	background: #55aaff;
 	border: 0;
 }
 
@@ -450,7 +450,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px #d5d5d5;
+	box-shadow: inset 0 0 1px 3px #55aaff;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -463,7 +463,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: #d5d5d5;
+	color: #55aaff;
 }
 
 .menu__list {
@@ -472,7 +472,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 .menu__item:first-child {
@@ -480,7 +480,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 .menu__link {
@@ -521,7 +521,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #d5d5d5;
+		border-bottom: 5px solid #55aaff;
 	}
 
 	.menu__btn {
@@ -575,7 +575,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: #d5d5d5;
+	color: #55aaff;
 }
 
 .meta__item {
@@ -631,12 +631,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .content a,
 .warning a {
 	font-weight: 700;
-	color: #d5d5d5;
+	color: #55aaff;
 }
 
 .content a:hover,
 .warning a:hover {
-	color: #d5d5d5;
+	color: #55aaff;
 	text-decoration: underline;
 }
 
@@ -718,7 +718,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 .tags__link,
@@ -733,7 +733,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: #d5d5d5;
+	background: #55aaff;
 	fill: #fff;
 }
 
@@ -791,7 +791,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: #d5d5d5;
+	color: #55aaff;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -874,7 +874,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 /* Post Navigation */
@@ -996,7 +996,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 textarea {
@@ -1025,7 +1025,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #d5d5d5;
+	border-bottom: 3px solid #55aaff;
 }
 
 .widget__item {
@@ -1104,7 +1104,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: #d5d5d5;
+	background: #55aaff;
 }
 
 .widget-languages__link-btn {

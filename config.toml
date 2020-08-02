@@ -1,31 +1,61 @@
 baseurl = "https://blog.fishsec.xyz/"
-title = "Fish Sec"
+title = "Fish Security"
 languageCode = "en-us"
-paginate = "4" # Number of posts per page
-theme = "mainroad"
-disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+paginate = "6" # Number of posts per page
+theme = "cactus"
 
 [Author]
   name = "Julien"
   bio = "Julien is an avid learner, with a few years of experience in the fields of application security and penetration testing. Aside from computers, he is enthralled by the joys of rock-climbing and dancing."
-  avatar = "img/avatar.png"
+  avatar = "img/logo.png"
+
+# Main menu which appears below site header.
+[[Menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[Menu.main]]
+name = "Posts"
+url = "/post"
+weight = 3
+
+[Markup]
+  [Markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "native"
+    tabWidth = 44
+
+[Markup.goldmark]
+  [Markup.goldmark.renderer]
+    unsafe = true
 
 [Params]
   subtitle = "All things security" # Subtitle of your site
-  description = "Description" # Description of your site
-  opengraph = false
-  twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
-  authorbox = true
-  post_navigation = false
-  post_meta = ["date", "categories"] # Order of post meta information
-  customCSS = ["css/custom.css"] # Include custom CSS files
-  # Global variable for highlighted color $highlightColor in custom.css
-  highlightColor = "#55aaff"
+  description = "Hello world" # Description of your site
+  colortheme = "dark" # dark, light, white, or classic
+  dateformat = "Jan 2, 2006"
 
-[Social]
-twitter = "0xEval"
+[[Params.social]]
+  name = "twitter"
+  link = "https://www.linkedin.com/in/0xEval/"
+
+[[Params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/jcouvy/"
+
+
   
 [Params.sidebar]
   home = "right"   # Configure layout for home page

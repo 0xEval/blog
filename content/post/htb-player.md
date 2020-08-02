@@ -12,7 +12,7 @@ Player was a really enjoyable machine, a lot of initial enumeration work was nee
 
 <!--more-->
 
-{{< figure src="https://cdn-images-1.medium.com/max/1600/1*6RwjUjszXVrCoX0oLjz5wg.png" width="800" caption="Credits to MrR3boot for the challenge" >}}
+{{< figure src="https://cdn-images-1.medium.com/max/1600/1*6RwjUjszXVrCoX0oLjz5wg.png" width="800" title="Credits to MrR3boot for the challenge" >}}
 
 Let's get started.
 
@@ -78,7 +78,7 @@ chat.player.htb
 
 # Enumerating: player.htb
 
-{{< figure src="https://cdn-images-1.medium.com/max/2400/1*-p3mjig4nkJbS30v57uNZw.png" width="800"  caption="Countdown on main domain" >}}
+{{< figure src="https://cdn-images-1.medium.com/max/2400/1*-p3mjig4nkJbS30v57uNZw.png"  title="Countdown on main domain" >}}
 
 We find the source code of the countdown in JS files. Everything seems to happen client-side, it is very unlikely that modifying it would have any impact on the server.
 

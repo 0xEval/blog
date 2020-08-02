@@ -27,7 +27,7 @@ weight = 3
 
 [[Menu.main]]
 name = "Cheat Sheet"
-url = "/cheatseet"
+url = "/cheatsheet"
 weight = 4
 
 [Markup]

@@ -3,7 +3,6 @@ title: About
 date: 2020-01-09
 authorbox: false
 sidebar: false
-menu: main
 ---
 
 Julien works as an application security engineer for [Grab](www.grab.com) and [OVO](www.ovo.id). He has experience managing and triaging on their respective bug bounty program (top 20 program worldwide on HackerOne). 

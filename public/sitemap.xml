@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.fishsec.xyz/</loc>
+    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fishsec.xyz/post/</loc>
+    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fishsec.xyz/post/thm-daily-bugle/</loc>
+    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.fishsec.xyz/post/token-storage/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -23,21 +38,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fishsec.xyz/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.fishsec.xyz/post/htb-player/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.fishsec.xyz/tags/hackthebox/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.fishsec.xyz/categories/learning/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -49,11 +49,6 @@
   
   <url>
     <loc>https://blog.fishsec.xyz/post/angularjs-sandbox-escape/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.fishsec.xyz/post/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -80,6 +75,21 @@
   <url>
     <loc>https://blog.fishsec.xyz/tags/xss/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fishsec.xyz/tags/hackthebox/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fishsec.xyz/post/htb-player/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fishsec.xyz/post/htb-zetta/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>

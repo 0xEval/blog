@@ -1,6 +1,3 @@
-[submodule "hugo-theme-cactus"]
-	path = hugo-theme-cactus
-	url = https://github.com/0xEval/hugo-theme-cactus
 [submodule "themes/cactus"]
 	path = themes/cactus
 	url = https://github.com/0xEval/hugo-theme-cactus

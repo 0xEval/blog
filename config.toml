@@ -25,6 +25,11 @@ name = "Posts"
 url = "/post"
 weight = 3
 
+[[Menu.main]]
+name = "Cheat Sheet"
+url = "/cheatseet"
+weight = 4
+
 [Markup]
   [Markup.highlight]
     codeFences = true

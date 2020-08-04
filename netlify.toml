@@ -29,7 +29,15 @@ HUGO_VERSION = "0.74.3"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true
 
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
-for = "/"
-[headers.values]
-Access-Control-Allow-Origin = "*.fishsec.xyz"
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

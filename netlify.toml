@@ -27,7 +27,7 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 HUGO_VERSION = "0.74.3"
 
 [context.next.environment]
-HUGO_ENABLEGITINFO = "true
+HUGO_ENABLEGITINFO = "true"
 
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.

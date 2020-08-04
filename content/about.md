@@ -5,13 +5,19 @@ authorbox: false
 sidebar: false
 ---
 
-Julien works as an application security engineer for [Grab](www.grab.com) and [OVO](www.ovo.id). He has experience managing and triaging on their respective bug bounty program (top 20 program worldwide on HackerOne). 
+Hi there,
 
-He also enjoys sharpening his skills on the ever so awesome [Hack The Box](https://www.hackthebox.eu/) website (check out my [profile](https://www.hackthebox.eu/profile/20856)).
+My name is Julien (aka. Eval on the Internet).
 
-Aside from computers, Julien is an aspiring rock climber - who aims to reach double digit routes before his thirties - dancer, and contemplator.
+I am a security professional with experience working in fast-paced & dynamic startup environments. My main topic of interest lies in the offensive security space (application security and red-teaming).
 
-Feel free to reach out on [Twitter](https://twitter.com/0xEval) or [LinkedIn](https://www.linkedin.com/in/jcouvy/) for professional enquiries.
+Outside of work, I spend a significant amount of time training for rock-climbing competitions as well as various outdoor adventures.
+
+Feel free to reach out on [Twitter](https://twitter.com/0xEval) for anything infosec-related or on [LinkedIn](https://www.linkedin.com/in/jcouvy/) for professional enquiries.
+
+You can also check my profiles in various amazing trainings platforms:
+* [Hack The Box](https://www.hackthebox.eu/profile/20856)
+* [TryHackMe](https://tryhackme.com/p/Eval)
 
 Thank you for reading, and have a great day ☀️!
 

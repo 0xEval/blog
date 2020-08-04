@@ -1,5 +1,5 @@
 ---
-title: Learning Weekly 01 - AngularJS sandbox escapes
+title: Introduction to AngularJS sandbox escapes
 description: 
 date: 2020-02-05
 categories:
@@ -10,19 +10,13 @@ tags:
   - "XSS"
   - "Learning Weekly"
 ---
-
-This post will be the starting point on a new series *Learning Weekly* where I will spend a week learning about a new topic and summarize the outcome in a single page format. 
-
-For this first episode, we will talk about **AngularJS sandbox escapes**.
-<!--more-->
-
 # Prelude
 
 [AngularJS](https://angularjs.org/) is a popular MVC (*Model View Controller*) client-side framework for building dynamic web apps. It lets you use HTML templates which can contain [expressions](https://docs.angularjs.org/guide/expression) - JavaScript-like code snippets that will be executed by Angular.
 
 In the following snippet, we can see that Angular will parse the content of the expression in-between curly braces `{{1+1}}` and output the result `2`.
 
-{{< jsfiddle "2zs2yv7o" "html,result" "light" >}}
+{{< jsfiddle id="2zs2yv7o" view="html,result" color="dark" >}}
 
 Similarly to [server-side template injections](https://portswigger.net/research/server-side-template-injection), anyone able to inject data inside an Angular expression will be able to execute arbitrary JavaScript. However, this only holds true under certain circumstances.
 
@@ -88,7 +82,7 @@ The following payload was found by Mario Heiderich and will effectively bypass t
 
 You can try it yourself, clicking on the `Result` tab below will pop an alert box originating from the JSFiddle domain.
 
-{{< jsfiddle "6gjqhtz5" "html,result" "light" >}}
+{{< jsfiddle id="6gjqhtz5" view="html,result" color="dark" >}}
 
 You might notice the alert box is popping up twice, why is that ? It is because of how Angular is rewritting our expression into a `Function`.
 
@@ -116,9 +110,6 @@ After the sandbox was introduced, many security researchers worked on finding wa
 Portswigger researcher Gareth Heyes gave a great talk explaining multiple of these bypasses. It goes with the blog-post linked in the references. *(Warning: it goes fast, and its hard to understand !)*:
 
 {{< youtube jlSI5aVTEIg >}}
-
-# Remediations
-
 
 # References
 

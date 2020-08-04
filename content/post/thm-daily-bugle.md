@@ -5,7 +5,7 @@ asciinema: true
 ---
 
 {{< asciinema key="dailybugle-jooblah" rows="10" preload="1" >}}
-![](/media/bugle-joomlah.png)
+![asd](/media/bugle-joomlah.png)
 ```bash
 kali@kali:~/TryHackMe/daily-bugle/Exploit-Joomla$ pipenv run "python joomblah.py http://10.10.95.72"
                                                                                                                     

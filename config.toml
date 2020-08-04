@@ -6,7 +6,6 @@ theme = "cactus"
 
 [Author]
   name = "Julien"
-  bio = "Julien is an avid learner, with a few years of experience in the fields of application security and penetration testing. Aside from computers, he is enthralled by the joys of rock-climbing and dancing."
   avatar = "img/logo.png"
 
 # Main menu which appears below site header.
@@ -48,7 +47,7 @@ weight = 4
 
 [Params]
   subtitle = "All things security" # Subtitle of your site
-  description = "Hello world" # Description of your site
+  description = "Welcome to my blog, I mostly post write-ups of a variety of challenges as well as occasional summaries of topics I've spent time learning. Hope you find something to your liking." # Description of your site
   colortheme = "dark" # dark, light, white, or classic
   dateformat = "Jan 2, 2006"
 

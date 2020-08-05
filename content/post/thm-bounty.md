@@ -1,5 +1,5 @@
 ---
-title: TryHackMe - Bounty Hunter Walkthrough
+title: TryHackMe - Bounty Hacker Walkthrough
 date: 2020-08-05
 asciinema: true
 ---

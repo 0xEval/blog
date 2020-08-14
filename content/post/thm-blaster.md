@@ -8,6 +8,8 @@ asciinema: true
 
 In this challenge, we will see basic enumeration of a Windows machine leading to exploitation of a common CVE. We will also use Mestaploit Framework to get achieve persistence.
 
+*Visit [TryHackMe](https://tryhackme.com) for more challenges*
+
 ---
 
 # Initial reconnaissance
@@ -84,7 +86,7 @@ Some Google-Fu (or pop culture knowledge) will indicate that the character "Wade
 ## Connecting to RDP
 
 Command run: `$ xfreerdp /u:"Wade" /v:"10.10.159.64:3389"`  
-Once asked with the password, we enter: `parzival` 
+Once asked with the password, we enter: `REDACTED` 
 
 {{< figure src="/media/blaster-rdp.png"  title="Successful connection to RDP" >}}
 
@@ -100,7 +102,7 @@ The following POC video shows the general idea:
 
 {{< figure src="/media/blaster-privesc.png"  title="Spawning an elevated shell" >}}
 
-We can spawn a powershell session running as `NT_Authority\System` (i.e: `root`)
+We can spawn a powershell session running as `NT_Authority\System` (i.e: `root`) and retrieve the `root.txt` flag
 
 ## Achieving persistence on the victim's machine
 

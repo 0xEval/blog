@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://0xeval.netlify.app"
 title = "Eval • Ramblings"
 languageCode = "en-us"
 theme = "devise"

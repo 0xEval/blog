@@ -1,73 +1,48 @@
-baseurl = "https://blog.fishsec.xyz/"
-title = "Fish Security"
+baseURL = "https://example.com"
+title = "Eval • Ramblings"
 languageCode = "en-us"
-paginate = "6" # Number of posts per page
-theme = "cactus"
+theme = "devise"
+relativeURLs = true
+enableEmoji = true
+googleAnalytics = ""
+enableRobotsTXT = true
+copyright = " "
 
-[Author]
-  name = "Julien"
-  avatar = "img/logo.png"
+# Main menu items
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = -110
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/post/"
+    weight = -100
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories/"
+    weight = -90
 
-# Main menu which appears below site header.
-[[Menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[Menu.main]]
-name = "About"
-url = "/about"
-weight = 2
-
-[[Menu.main]]
-name = "Posts"
-url = "/post"
-weight = 3
-
-[[Menu.main]]
-name = "Cheat Sheet"
-url = "/cheatsheet"
-weight = 4
-
-[Markup]
-  [Markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "native"
-    tabWidth = 44
-
-[Markup.goldmark]
-  [Markup.goldmark.renderer]
-    unsafe = true
-
-[Params]
-  subtitle = "All things security" # Subtitle of your site
-  description = "Welcome to my blog, I mostly post write-ups of a variety of challenges as well as occasional summaries of topics I've spent time learning. Hope you find something to your liking." # Description of your site
-  colortheme = "dark" # dark, light, white, or classic
-  dateformat = "Jan 2, 2006"
-
-[[Params.social]]
-  name = "twitter"
-  link = "https://www.linkedin.com/in/0xEval/"
-
-[[Params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/jcouvy/"
-
-
-  
-[Params.sidebar]
-  home = "right"   # Configure layout for home page
-  list = "right"   # Configure layout for list pages
-  single = false # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
-
-[Params.widgets]
-  recent_num = 3 # Set the number of articles in the "Recent articles" widget
-  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+# Configuration Features
+[params]
+  description = "Subpar Ramblings"      # Your meta description of the site
+  header_title = "Hi, I'm Eval"                 # Your header title
+  header_subtitle = "Reading my blog == probably NGMI" # Your header subtitle
+  home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory
+  recent_posts = 4                           # Max amount of recent posts to show
+  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [params.style]                             # CSS style overrides
+    backgroundColor = "#f8f9fa"
+    fontColor = "#212529"
+  [[params.social]]
+    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
+    href = "https://github.com/0xeval"      # Link to associate with icon (http://, https://, mailto:)
+  [[params.social]]
+    fa_icon = "fab fa-twitter fa-1x"
+    href = "https://twitter.com/0xeval"

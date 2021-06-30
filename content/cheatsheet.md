@@ -8,3 +8,4 @@ date: 2020-01-09
 # Powershell
 
 Windows Defender status: `Get-MpComputerStatus`
+Disabled Windoows real-time: `Set-MpPreference -DisableRealtimeMonitoring $true`

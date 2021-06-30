@@ -2,8 +2,6 @@
 title: Analysis on secure session token storage 
 description: 
 date: 2020-02-05
-categories:
-  - "Write-up"
 tags:
   - "Cookies"
   - "Storage"

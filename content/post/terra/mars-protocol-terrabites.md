@@ -1,11 +1,9 @@
 ---
-title: Notes on TerraBitesPod about Mars Protocol
+title: Notes on the Terra Bites Podcast about Mars Protocol w/ @ZeMariaMacedo (Head of Delphi Labs)
 date: Mon Sep  6 17:58:12 +08 2021
 categories:
   - "Terra"
 ---
-
-# Notes on the Terra Bites Podcast about Mars Protocol w/ @ZeMariaMacedo (Head of Delphi Labs)
 
 ## Relationship Delphi Digital <> TerraForm Labs
 

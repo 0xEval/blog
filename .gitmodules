@@ -3,4 +3,4 @@
 	url = https://github.com/0xEval/hugo-theme-cactus
 [submodule "themes/devise"]
 	path = themes/devise
-	url = https://github.com/austingebauer/devise.git
+	url = https://github.com/0xEval/devise.git

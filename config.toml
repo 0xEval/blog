@@ -4,7 +4,7 @@ languageCode = "en-us"
 theme = "devise-eval"
 relativeURLs = true
 enableEmoji = true
-googleAnalytics = ""
+googleAnalytics = "G-JFGM0VCQJT"
 enableRobotsTXT = true
 copyright = " "
 
@@ -28,6 +28,20 @@ copyright = " "
     title = "Categories"
     url = "/categories/"
     weight = -90
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'bw'
+    tabWidth = 4
 
 # Configuration Features
 [params]
